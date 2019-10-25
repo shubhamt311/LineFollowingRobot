@@ -41,27 +41,27 @@ void loop() {
   if((l==1)&&(ll==1)&&(m==0)&&(r==1)&&(rr==1)){ /*Move Forward*/
     forward();
     Serial.println("Forward");
-    delay(500);
+    delay(300);
   }
   else if((l==0)&&(ll==0)&&(m==1)&&(rr==0)&&(r==0)){ /*Move Forward*/
     forward();
     Serial.println("Forward");
-    delay(500);
+    delay(300);
   }
   
    ///////////////////////// CONDITIONS FOR LEFT TURN /////////////////////////
   else if((l==0)&&(ll==0)&&(m==0)&&(rr==1)&&(r==1)){ /*Turn 90 Left*/
     turn_left();
-    delay(700);
-    Serial.println("Turn 90 Left");
     delay(500);
+    Serial.println("Turn 90 Left");
+    delay(300);
   }
 
   else if((l==1)&&(ll==0)&&(m==1)&&(rr==1)&&(r==1)){ /*Slightly Turn Left*/
     slight_left();
     delay(300);
     Serial.println("Slight Turn Left");
-    delay(500);
+    delay(300);
   }
 
 
@@ -69,45 +69,45 @@ void loop() {
   
   else if((l==1)&&(ll==1)&&(m==0)&&(rr==0)&&(r==0)){ /*Turn 90 Right*/
     turn_right();
-    delay(700);
-    Serial.println("Turn 90 Right");
     delay(500);
+    Serial.println("Turn 90 Right");
+    delay(300);
   }
 
   else if((l==1)&&(ll==1)&&(m==1)&&(rr==0)&&(r==1)){ /*Slightly Turn Right*/
     slight_right();
     delay(300);
     Serial.println("Slightly Turn Right");
-    delay(500);
+    delay(300);
   }
   ///////////////////////////GAP LEFT ////////////////////////////////////////
  else if((l==0)&&(ll==0)&&(m==1)&&(r==1)&&(rr==1)){ /*Condition For EXTREAM RIGHT GAP   */
     turn_left();
-    delay(700);
-    Serial.println("GAP  EXTREAM LEFT// 90*");
     delay(500);
+    Serial.println("GAP  EXTREAM LEFT// 90*");
+    delay(300);
   }
 
  else if((l==0)&&(ll==1)&&(m==0)&&(r==1)&&(rr==1)){ /*Condition For  RIGHT GAP*/
     turn_left();
-    delay(700);
-    Serial.println("GAP LEFT // 90* ");
     delay(500);
+    Serial.println("GAP LEFT // 90* ");
+    delay(300);
   }
 
   ///////////////////////////GAP RIGHT ////////////////////////////////////////
  else if((l==1)&&(ll==1)&&(m==1)&&(r==0)&&(rr==0)){ /*Condition For Extream Gap*/
     turn_right();
-    delay(700);
-    Serial.println("GAP EXTREAM RIGHT");
     delay(500);
+    Serial.println("GAP EXTREAM RIGHT");
+    delay(300);
   }
 
   else if((l==1)&&(ll==1)&&(m==0)&&(r==0)&&(rr==1)){ /*Condition For Gap*/
     turn_right();
-    delay(700);
-    Serial.println("GAP RIGHT //90");
     delay(500);
+    Serial.println("GAP RIGHT //90");
+    delay(300);
   }
 
 }
